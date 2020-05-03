@@ -1,0 +1,42 @@
+html,body{
+height: 100%;
+width: 100%;
+}
+*{
+margin: 0;
+padding: 0;
+}
+#emailLogin{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows: 350px 1fr 1fr 1fr;
+grid-template-areas:
+". . ."
+". eUsername ."
+". ePassword ."
+". login-btn ."
+
+;    
+}
+#emailUsername{
+justify-self: center;
+width: 50%;
+height: 25px;
+text-align: center;
+grid-area: eUsername;
+margin-bottom: 12px;
+}
+#emailPassword{
+justify-self: center;
+width: 50%;
+height: 25px;
+text-align: center;
+grid-area: ePassword;
+}
+#login-btn{
+justify-self: center;
+width: 30%;
+grid-area: login-btn;
+margin-top: 12px;
+height: 25px;
+}
